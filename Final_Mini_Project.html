@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanju Clothing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link type="stylesheet" href="style2.css">
+</head>
+
+<style>
+    body{
+    margin: 10;
+    padding: 10;
+    font-family: 'Poppins',sans-serif;
+}
+
+/*clearfix--> if we floating child into parents */
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+*{
+     box-sizing: border-box;
+}
+
+html{
+     font-size:18px;
+}
+
+/*Banner NAvigation*/
+
+.master{
+       width: 100%;
+       height: 120vh;
+       background-image: url("./R.jpg");
+       background-attachment: fixed;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       
+}
+
+.navigation{
+      width: 100%;
+      background-color: rgb(31,30,30);
+}
+
+.nav-center{
+      max-width: 1300px;
+      margin:  auto;
+}  
+
+
+.nav-center h1{
+       float: left;
+       padding-left : 50px; 
+       color:#fff;
+       padding-top: 15px;
+       padding-bottom: 15px;
+       padding-left: 10px;
+       padding-right: 20px;
+       
+       font-size: 2rem;
+
+}
+
+.orange{
+color: #f51818;
+
+}
+
+.nav-center ul{
+float: right;
+font-size: 1rem;
+
+}
+
+
+.navigation ul li{
+float: left;
+list-style: none;
+font-weight: 500;
+padding: 15px 40px 0px 0px;
+padding-top:40px;
+font-size: 1.1rem;/*html madhe font size set kela hota 1rem tyacha equivalent aahe*/
+font-weight:700;
+}
+
+.icon{
+float: right;
+margin: 20px 10px 0 0;
+background-color: transparent;
+border: none;
+outline: none;
+display: none;
+}
+
+a{
+color: #fff;
+text-decoration: none;
+
+}
+
+.fa{
+font-size: 30px;
+color: #fff;
+}
+
+.banner{
+max-width: 1600px;
+margin: 0 auto;
+text-align: center;
+padding-top: 50vh;
+color: #fff;
+}
+
+.banner h3{
+color: #f51818;
+font-size: 1.4rem;
+}
+
+.banner h1{
+font-size: 3.5rem;
+letter-spacing: 5px;
+font-weight: 500;
+margin-top: 0;
+
+}
+
+/*Product*/
+
+
+.product hr{
+clear: both;
+height: 1px;
+background-color: rgb(219,214,214);
+border:none;
+}
+
+.product-list{
+width: 100%;
+padding-top: 30px;
+
+}
+
+/*.product{
+max-width: 1200px;
+padding: 100px 15px;
+margin: 0 auto;
+}*/
+
+.product { 
+     max-width: 1220px;
+     padding: 0px 20px; 
+      margin: 0 auto; 
+    }
+
+.product h1{
+float: left;
+font-weight: 700;
+font-size: 3rem;
+color: rgb(56,56,56);
+/*padding: 1px 1px;*/
+padding-top: 50px;
+padding-bottom: 30px;
+padding-left: 30px;
+padding-right: 8px;
+}
+
+.product h3{
+margin-left: 15px;
+padding: 1px 1px;
+}
+
+.product h4{
+float: right;
+color: #f51818;
+font-weight: 800;
+font-size: 1.1rem;
+padding: 7%;
+padding-left: 20%;
+padding-right: 5%;
+padding-bottom: 1%;
+padding-top: 7%;
+}
+
+
+.product-box{
+width: 27%;
+float: center;
+margin: 0 2%;
+padding-bottom: 15px;
+border: 1px solid rgb(219, 214, 214);
+
+}
+
+.pro-pic{
+width: 100%;
+margin-bottom: 10px;
+}
+
+.product-box h2{
+float: center;
+padding-bottom: 10%;
+font-weight: 500;
+color: #1714d3;
+font-size: 1.5rem;
+margin-left: 10px;
+}
+
+.product-box{
+float: right;
+padding-right: 0px;
+color: rgb(20, 2, 2);
+}
+
+.product-box p{
+clear: both;
+padding: 0 5%;
+color: rgb(10, 1, 1);
+font-size: o.9rem;
+line-height: 20px;
+}
+
+.five-star{
+float:left;
+font-size: 15px;
+padding: 10px 2px;
+color: #f51818;
+}
+
+.five-star1{
+margin-left: 5%;
+}
+
+.review{
+float: right;
+padding-right: 5% ;
+color: #f51818;
+margin-top: 10px;
+}
+
+/*About*/
+
+.about{
+max-width: 1250px;
+margin: 3% auto;
+padding:0 15px;
+padding-left: 5%;
+}
+
+.about h1{
+font-weight: 500;
+/*font-size: 2.5rem;*/
+color: rgb(168, 146, 146);
+
+
+}
+
+.about hr{
+height: 1px;
+border: none;
+background-color: rgb(214, 214, 218);
+
+}
+.about .left-box{
+width: 750px;
+float: left;
+/*padding-right: 20px ;*/
+
+}
+
+.left-box h2{
+color:#5c92b1;
+font-weight: 250;
+margin-top: 0;
+padding: 10px 0 0 5px;
+
+}
+
+.left-box p{
+line-height: 25px;
+color: rgb(122, 120, 120);
+padding: 10px 5px 5px 5px;
+font-size: 1.2rem;
+}
+
+.left-box a{
+color: rgb(10, 65, 245);
+font-size: 1.2rem;
+}
+
+.btn{
+width: 120px;
+height: 30px;
+border: none;
+color: #fff;
+background-color: #f51818;
+border-radius: 5px;
+font-size: 1rem;
+
+}
+
+.left-box .feature{
+padding: 0px 10px 10px 10px;
+font-size: 1.1rem;
+}
+
+.left-box .feature li{
+padding: 5px 5px;
+list-style-type: 0;
+margin-left: 15px;
+color: rgb(56, 56, 56);
+}
+
+.about .right-box{
+width: 60px;
+float: right;
+}
+
+.about .right-box{
+width: 50px;
+float: left;
+}
+
+.right-box .about-pic{
+width: 750%;
+padding-right: 0px ;
+padding-bottom: 1%;
+padding-left: 0%;
+padding-top: 100%;
+}
+
+/*Purchase*/
+
+.purchase{
+max-width: 1250px;
+margin: 10px auto;
+padding: 20px 20px;
+/* padding-left: 60px;
+padding-right: 10px;
+padding-top: 1%;
+padding-bottom: 30px;*/
+}
+
+.center{
+width: 100%;
+background-color: rgb(221, 233, 233);
+margin: 0px 0px;
+padding: 0% 20px 20px 400px;
+}
+
+.left{
+color: #000;
+padding :10px;
+padding-left: 10px;
+padding-right: 20px;
+padding-bottom: 10px;
+
+}
+
+.bold{
+font-weight: 700;
+}
+
+.left p{
+color: rgb(4, 2, 19);
+
+}
+
+.right{
+width: 20%;
+float: left;
+text-align: left;
+padding: 0px 0px 1px 135px;
+}
+
+.purchase button{
+width: 140px;
+height: 30px;
+border: none;
+color: rgb(238, 237, 237);
+background-color: #f23;
+border-radius: 5px;
+font-size: 1rem;
+}
+
+.purchase hr{
+height: 1px;
+border: none;
+background-color: rgb(214, 214, 218);
+}
+
+/* Footer */
+
+.footer{
+max-width: 1000px;
+margin: auto;
+text-align: center;
+padding: 0px 0px 50px 0px;
+}
+
+.footer p{
+font-size: 1rem ;
+}
+
+
+
+/* Media Quearies*/
+
+@media only screen and ( max-width: 850px){
+.product-box h2{
+padding-left: 2%;
+}
+
+.product-box h3{
+padding-right: 2%;
+}
+
+.product-box p{
+padding: 2%;
+}
+}
+
+@media only screen and (max-width:760px) {
+.navigation ul{
+display: none;
+position: absolute;
+top:50px;
+padding-left: 20px ;
+
+}
+
+.icon{
+display: block;
+}
+}
+/*
+div.product-box clearfix{
+margin: 5px;
+border: 1px solid #ccc;
+float: left;
+width: 180px;
+}
+div.product-box clearfix:hover {
+border: 1px solid #777;
+}
+
+div.product-box clearfix img {
+width: 100%;
+height: auto;
+}
+
+div.desc {
+padding: 15px;
+text-align: center;
+}
+*/
+</style>
+
+
+<body>
+
+      <!--banner and NAvigations-->
+
+      <div class="master">
+        <nav class="navigation">
+            <div class="nav-center clearfix">
+                   <h1>SANJU <span class="orange"> CLOTHING</span></h1>
+                    <ul>
+                        <li><a href="#" class="orange"> Home </a></li>
+                        <li><a href="#">Our Products </a></li>
+                        <li><a href="#"> About Us </a></li>
+                        <li><a href="#"> Contact Us </a></li>
+                    </ul>
+                   
+                <button class="icon"><span class="fa fa-bars nav-icon"></button>
+            </div>
+       </nav>
+ 
+
+
+              <div class="banner">
+                 <h3>BEST OFFER</h3>
+                 <h1>NEW ARRIVALS ON SALE</h1>
+                 <span class="fa fa-dots"></span>
+              </div>
+      </div>  
+
+        <div class="product clearfix">
+            <h1>Latest Product</h1>>
+            <h4>VIEW ALL PRODUCTS</h4>
+            <hr>
+            <div class="product-list clearfix">
+                <!--1copy----3---->
+                <div class="product-box clearfix">
+                      <img src="./rb1.jpg" alt="product" class="pro-pic">
+                      <h2>  Crepe Kurta With Sharara And Dupatta </h2>
+                      <h3> Rs.3900 </h3>
+
+                      <p>Care Instructions: Hand Wash Only
+                        Material: Kurti-Poly Crepe; Bottom-Poly Crepe; Dupatta-Georgette</p>
+                      <span class="fa fa-star five-star five-star1"></span> 
+                      <span class="fa fa-star five-star"></span>
+                      <span class="fa fa-star five-star"></span>
+                      <span class="fa fa-star five-star"></span>
+                      <span class="fa fa-star five-star"></span>
+                      <h5 class="review">Review(63)</h5> 
+                </div>      
+                <!--2copy---2-->
+                <div class="product-box clearfix">
+                    <img src="./rb2.jpg" alt="product" class="pro-pic">
+                    <h2>  Gold Print Sharara Garara   </h2>
+                    <h3>  Rs.3500</h3>
+
+                    <p>Kurti Fabric : Rayon || Bottomwear Sharara Fabric : Rayon || Dupatta Fabric : Rayon
+                        Style: A Line Kurti || Set Type: Kurti with Sharara and Dupatta Set</p>
+                    <span class="fa fa-star five-star five-star1"></span> 
+                    <span class="fa fa-star five-star"></span>
+                    <span class="fa fa-star five-star"></span>
+                    <span class="fa fa-star five-star"></span>
+                    <span class="fa fa-star five-star"></span>
+                    <h5 class="review">Review(34)</h5> 
+              </div>       
+              <!--1copy-->
+              <div class="product-box clearfix">
+                <img src="./rb3.jpg" alt="product" class="pro-pic">
+                <h2>Balloon Sleeve Casual Dress </h2>
+                <h3>  Rs.2600</h3>
+
+                <p>Fit Type: Relaxed
+                    Ankle length A-line dress with butterfly sleeves and boat neck</p>
+                <span class="fa fa-star five-star five-star1"></span> 
+                <span class="fa fa-star five-star"></span>
+                <span class="fa fa-star five-star"></span>
+                <span class="fa fa-star five-star"></span>
+                <span class="fa fa-star five-star"></span>
+                <h5 class="review">Review(28)</h5> 
+          </div>    
+            </div>
+
+
+            <div class="product-list"></div>
+          <!--4copy---6-->
+          <div class="product-box clearfix">
+            <img src="./rb4.jpg" alt="product" class="pro-pic">
+            <h2>Western One Piece With White Shirt</h2>
+            <h3> Rs.3500 </h3>
+
+            <p>Care Instructions: Dry Clean Only
+                Fit Type: body fit
+                Fit Type: Body Fit<br>Category- One Dress with Shrug - 2Pieces</p>
+            <span class="fa fa-star five-star five-star1"></span> 
+            <span class="fa fa-star five-star"></span>
+            <span class="fa fa-star five-star"></span>
+            <span class="fa fa-star five-star"></span>
+            <span class="fa fa-star five-star"></span>
+            <h5 class="review">Review(39)</h5> 
+         </div>       
+               
+
+        
+         <!--5copy---5--->
+         <div class="product-box clearfix">
+            <img src="./rb5.jpg" alt="product" class="pro-pic">
+            <h2>Georgette Anarkali Salwar Suit Set</h2>
+            <h3> Rs.2800 </h3>
+
+            <p>Womens Rayon kurta Sarara-Garara set/kurta Sarara-Garara/women kurti & Sarara-Garara/ladies kurti & Sarara-Garara</p>
+            <span class="fa fa-star five-star five-star1"></span> 
+            <span class="fa fa-star five-star"></span>
+            <span class="fa fa-star five-star"></span>
+            <span class="fa fa-star five-star"></span>
+            <span class="fa fa-star five-star"></span>
+            <h5 class="review">Review(51)</h5> 
+         </div>       
+
+        
+        <!---6copy-----4--->
+        <div class="product-box clearfix">
+            <img src="./rb6.jpg" alt="product" class="pro-pic">
+            <h2> White Bootcut Jegging and Top </h2>
+            <h3> Rs.5100 </h3>
+
+            <p>Boot Cut
+                Regular-rise
+                Comfortable, breathable, Stylish can be worn all day<br>Sleeve Type: Sleeveless<br>Pattern name: Solid</p>
+            <span class="fa fa-star five-star five-star1"></span> 
+            <span class="fa fa-star five-star"></span>
+            <span class="fa fa-star five-star"></span>
+            <span class="fa fa-star five-star"></span>
+            <span class="fa fa-star five-star"></span>
+            <h5 class="review">Review(44)</h5> 
+      </div>       
+
+
+           </div>
+       </div>  
+   
+
+       <!--About section(Contact us)-->
+    
+       <div class="about clearfix">
+        <h1>About SANJU CLOTHING</h1>
+        <hr>
+        <div class="left-box">
+            <h2>Looking for the best products?</h2>
+            <p>Click on <a href="#">contact us</a> for more details or call <a href="#"> 1234567899</a> or <a href="#">sanjuclothing@gmail.com</a></a></p>
+            <
+            <ul class="feature">
+                <li>Make money with us :- Sell on Sanju Clothing </li>
+                <li>Advertise Your Products here</li>
+                <li>Become an Affiliate </li>
+                
+            </ul>
+
+            <button class="btn">Read More</button>
+        </div>
+        <div class="right-box">
+            <img src="./mobiles.jpg" alt="Mobile" class="about-pic">
+        </div>
+    </div>
+
+    <!--Purchase Section-->
+
+    <div class="purchase">
+        <hr>
+        <div class="center clearfix">
+            <div class="left">
+                <h2>Creative & Unique <span class="bold"> SANJU </span> Product</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div>
+                 <div class="right">
+                     <button>Purchase Now</button>
+                 </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+     <!---Footer Section-->
+
+     <div class="footer">
+        <p>COPYRIGHT @ 2021 SANJU CLOTHING CO., LTD. - DESIGN:<span class="orange">HTT.</span></p>
+    </div>
+
+
+
+
+</body>
+</html>   
